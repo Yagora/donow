@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: send build result notification to teams when succed
+      send_to_teams:
+          web_hook: "https://outlook.office.com/webhook/970c8d8e-d905-48a9-8078-59ce8ac4bf3c@bcccbda4-a4dc-4cf5-b7cb-7a3869ac0856/IncomingWebhook/988e79ebcae2431b8c9cf1a73915dff4/2fb485a4-9d88-4c4f-ad9a-353581591d6c"
+          success:  True
+          title: "Build"
+          environment: "preprod"
+          action: "I tried to build something"
