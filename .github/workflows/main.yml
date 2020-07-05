@@ -30,7 +30,7 @@ jobs:
       uses: saubermacherag/ansible-playbook-docker-action@v1.3
       with:
         # Name of the playbook in your workspace.
-        playbookName: test.yaml
+        playbookName: IOMentum-deployment/test.yaml
         # Name of the inventory file to use.
         inventoryFile: # optional
         # name of the requirements file to use.
