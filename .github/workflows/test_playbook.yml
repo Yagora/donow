@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deployment ansible
+name: Deployment ansible playbook
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -34,7 +34,7 @@ jobs:
         # Name of the inventory file to use.
         inventoryFile: # optional
         # name of the requirements file to use.
-        requirementsFile: IOMentum-deployment/ansible/roles/vars_conf.yml # optional
+        requirementsFile:  # optional
         # If you use private github repositories in your requirements file you need to set galaxyGithubUser and galaxyGithub token.
         galaxyGithubUser: # optional
         # Token to access git source of roles to download. Only needed for private git sources. Github Account needs to be linked to Ansible Galaxy.
@@ -48,7 +48,7 @@ jobs:
         # String containing all extraVars which you want to be injected into the run.
         extraVars: # optional
         # File containing extra vars.
-        extraFile: # optional
+        extraFile: IOMentum-deployment/ansible/roles/vars_conf.yml # optional
         # Choose one of 4 verbosity levels. See Ansible documentation for details.
         verbosity: # optional
 
