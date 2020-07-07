@@ -32,7 +32,7 @@ jobs:
         # Name of the playbook in your workspace.
         playbookName: IOMentum-deployment/ansible/test-conf-helloworld.yml
         # Name of the inventory file to use.
-        inventoryFile: # optional
+        inventoryFile: IOMentum-deployment/ansible/hosts # optional
         # name of the requirements file to use.
         requirementsFile: # optional
         # If you use private github repositories in your requirements file you need to set galaxyGithubUser and galaxyGithub token.
@@ -42,7 +42,7 @@ jobs:
         # If inventoryFile is set you can also specify a custom roles path to install your required roles in.
         rolesPath: # optional
         # Keyfile to use for host connections.
-        keyFile: IOMentum-deployment/ansible/hosts # optional
+        keyFile: # optional
         # Vault Password to decrypt keyFile.
         keyFileVaultPass: # optional
         # String containing all extraVars which you want to be injected into the run.
