@@ -34,7 +34,7 @@ jobs:
         # Name of the inventory file to use.
         inventoryFile: # optional
         # name of the requirements file to use.
-        requirementsFile: # optional
+        requirementsFile: IOMentum-deployment/ansible/roles/vars_conf.yml # optional
         # If you use private github repositories in your requirements file you need to set galaxyGithubUser and galaxyGithub token.
         galaxyGithubUser: # optional
         # Token to access git source of roles to download. Only needed for private git sources. Github Account needs to be linked to Ansible Galaxy.
