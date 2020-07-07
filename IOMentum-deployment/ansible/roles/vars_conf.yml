@@ -1,4 +1,1 @@
-server_name: test.nginx.lb #à renseigner
-proxy_pass: http://localhost:8090 #à renseigner
-nginx_dir: /etc/nginx/conf.d
-docker_dir: /home/centos/docker-helloworld-http2
+/etc/ansible/roles/vars_conf.yml
