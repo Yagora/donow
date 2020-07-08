@@ -20,7 +20,8 @@
 127.0.0.1	ansible_connection=local
 
 [web]
-18.218.20.176
+18.225.34.135 ansible_user=ec2-user
+
 ## alpha.example.org
 ## beta.example.org
 ## 192.168.1.100

@@ -1,6 +1,10 @@
 ---
 - name: Configuration de NginX
-  hosts: web
+- hosts: web
+  remote_user: ec2-user
+  become_method: sudo
+  gather_facts: yes
+  connection: ssh
   #connection: local
   #vars:
   #      server_name: test.nginx.lb #à renseigner
