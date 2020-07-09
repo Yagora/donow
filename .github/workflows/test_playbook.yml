@@ -42,7 +42,7 @@ jobs:
         # If inventoryFile is set you can also specify a custom roles path to install your required roles in.
         rolesPath: # optional
         # Keyfile to use for host connections.
-        keyFile: IOMentum-deployment/ansible/access_aws.pem # optional
+        keyFile: IOMentum-deployment/ansible/acces_aws.pem # optional
         # Vault Password to decrypt keyFile.
         keyFileVaultPass: # optional
         # String containing all extraVars which you want to be injected into the run.
