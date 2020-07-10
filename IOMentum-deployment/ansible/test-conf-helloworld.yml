@@ -31,6 +31,7 @@
    - name: Créer et démarrer le service docker compose
      docker_compose:
         project_src: "{{ docker_dir }}"
+        state: present
         build: yes
 
    - name: Relancer le service NginX
