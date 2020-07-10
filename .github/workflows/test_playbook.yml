@@ -48,7 +48,7 @@ jobs:
         # If inventoryFile is set you can also specify a custom roles path to install your required roles in.
         rolesPath: # optional
         # Keyfile to use for host connections.
-        keyFile: /home/runner/work/donow_ansible/donow_ansible/key # optional
+        keyFile: key # optional
         # Vault Password to decrypt keyFile.
         keyFileVaultPass: # optional
         # String containing all extraVars which you want to be injected into the run.
