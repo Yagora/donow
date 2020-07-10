@@ -1,5 +1,6 @@
+# Fichier de variables appelé par le playbook test-conf-helloworld.yml
+
 server_name: test.nginx2.lb #à renseigner
 proxy_pass: http://localhost:8095 #à renseigner
 nginx_dir: /etc/nginx/conf.d
 docker_dir: /home/ec2-user/docker-helloworld-http
-
