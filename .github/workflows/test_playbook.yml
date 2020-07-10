@@ -25,6 +25,12 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: echo Hello, world! $VAULT_TEST
+    
+    # Include SSH Key in a file so the command will recognize it
+    - run: 'echo "$AWS_KEY" > key'
+      shell: bash
+      env:
+        AWS_KEY: ${{secrets.AWS_KEY}}
 
     - name: Execute Ansible Playbook
       uses: saubermacherag/ansible-playbook-docker-action@v1.3
@@ -42,7 +48,7 @@ jobs:
         # If inventoryFile is set you can also specify a custom roles path to install your required roles in.
         rolesPath: # optional
         # Keyfile to use for host connections.
-        keyFile: ${{ secrets.AWS_KEY }} # optional
+        keyFile: $key # optional
         # Vault Password to decrypt keyFile.
         keyFileVaultPass: # optional
         # String containing all extraVars which you want to be injected into the run.
