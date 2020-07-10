@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world! $VAULT_TEST
+      run: pwd
     
     # Include SSH Key in a file so the command will recognize it
     - run: 'echo "$AWS_KEY" > key'
