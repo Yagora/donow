@@ -1,3 +1,10 @@
+#########################################
+#
+# author : Gharios Damien
+# date : 07-2020
+# enterprise : Donow
+#
+#########################################
 # This is a basic workflow to help you get started with Actions
 
 name: Deployment ansible playbook on distant server
@@ -21,10 +28,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a single command using the runners shell
-    #- name: Run a one-line script
-    #  run: pwd
     
     # Include SSH Key in a file so the command will recognize it
     - run: 'echo "$AWS_KEY" > key'
