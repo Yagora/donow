@@ -20,7 +20,7 @@
    - name: Ajout du template de conf dans NginX conf.d
      become: true
      template:
-        src: template/nginx.conf.j2
+        src: templates/nginx.conf.j2
         dest: "{{ nginx_dir }}/{{ server_name }}.conf"
                 
    - name: Ajout du site dans /etc/hosts
