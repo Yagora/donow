@@ -20,7 +20,7 @@
    - name: Ajout du template de conf dans NginX conf.d
      become: true
      template:
-        src: templates/test-nginx.conf
+        src: template/nginx.conf.j2
         dest: "{{ nginx_dir }}/{{ server_name }}.conf"
                 
    - name: Ajout du site dans /etc/hosts
@@ -35,7 +35,10 @@
         project_src: "{{ docker_dir }}"
         state: present
         build: yes
-
+     register: output
+   - debug: 
+        var: output
+        
    - name: Relancer le service NginX
      become: true
      service:
